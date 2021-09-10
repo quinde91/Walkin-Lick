@@ -5,7 +5,7 @@ let stage = 'dev'
 let products = []
 
 async function getProducts() {
-    const host = stage === 'dev' ? 'http://localhost:5000' : 'http://www.walkinglickco.com/'
+    const host = stage === 'dev' ? 'http://localhost:5000' : 'https://walking-lick.herokuapp.com/'
     const response = await axios.get(`${host}/products`)
     console.log(response.data)
     products = response.data.products
