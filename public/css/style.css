@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    position: relative;
+}
+body{
+    background: whitesmoke;
+}
+.overlay{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: rgba(10,10,10,0.3);
+}
+nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 60px 0 60px;
+}
+nav li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+nav li span{
+    padding-left: 5px;
+}
+li a{
+    padding: 5px;
+    background-color: #fff;
+    text-decoration: none;
+}
+.cart a{
+    background-color: aqua;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+.container {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.image{
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.add-cart{
+    position:relative;
+    width: 80%;
+    color: black;
+    background-color: aqua;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+}
+/* .image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4*/
+.showCart { 
+    bottom: 70px;
+    opacity: 1;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+/*--------------------------Cart-------------------------*/
+
+
+.product{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: 1px solid black;
+    color: #fff;
+    background: black;
+}
+ 
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+.product i{
+    font-size: 20px;
+    color: aqua;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.product-header{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    background:black;
+}
+
+
+.total-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 15px;
+}
