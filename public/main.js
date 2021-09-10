@@ -1,9 +1,12 @@
 let carts = document.querySelectorAll('.add-cart')
 
+let stage = 'dev'
+
 let products = []
 
 async function getProducts() {
-    const response = await axios.get('https://walking-lick.herokuapp.com/products')
+    const host = stage === 'dev' ? 'http://localhost:5000' : 'http://www.walkinglickco.com/'
+    const response = await axios.get(`${host}/products`)
     console.log(response.data)
     products = response.data.products
 
