@@ -3,7 +3,7 @@ let carts = document.querySelectorAll('.add-cart')
 let products = []
 
 async function getProducts() {
-    const response = await axios.get('http://localhost:5000/products')
+    const response = await axios.get('https://walking-lick.herokuapp.com/')
     console.log(response.data)
     products = response.data.products
 
