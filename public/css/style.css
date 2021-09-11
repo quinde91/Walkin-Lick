@@ -145,3 +145,36 @@ li a{
     gap: 1rem;
     padding: 15px;
 }
+.btn-buy{
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.startCheckout{
+    background: black;
+    color: aqua;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+
+/* --------------------- Checkout Success ------------------ */
+
+.checkoutSuccessCtn{
+    background-color:  rgb(224, 224, 224);
+    text-align: center;
+    justify-content: center;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.checkoutSuccessCtn h1 {
+    margin-bottom: 10px;
+}
+.checkoutSuccessCtn p {
+    margin-bottom: 10px;
+}

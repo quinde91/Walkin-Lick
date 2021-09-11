@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7379e93cf5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/style.css">
-    <title>Home</title>
+    <script src="https://js.stripe.com/v3/"></script>
+    <title>Walking Lick</title>
 </head>
 
 <body>
@@ -38,11 +39,17 @@
         <div class="products">
 
         </div>
+
+        <div class="btn-buy">
+            <button id="startCheckout" class="startCheckout">Checkout</button>
+        </div>
+
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"
         integrity="sha512-lTLt+W7MrmDfKam+r3D2LURu0F47a3QaW5nF0c6Hl0JDZ57ruei+ovbg7BrZ+0bjVJ5YgzsAWE+RreERbpPE1g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/main.js"></script>
+    <script src="/payment.js"></script>
 
 </body>
 
