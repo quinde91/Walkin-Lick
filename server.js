@@ -1,4 +1,5 @@
 const express = require('express');
+const axios = require('axios')
 const path = require('path');
 const app = express();
 const dotenv = require('dotenv')
@@ -13,6 +14,8 @@ app.use(express.urlencoded({ extended: false}))
 app.use(express.json())
 
 
+
+
 app.set('view engine', 'hbs');
 
 // app.get("/", (req, res) =>{
@@ -24,6 +27,7 @@ app.set('view engine', 'hbs');
 // })
 
 app.use('/', require('./routes/pages'));
+app.use('/store', require('./routes/pages'));
 app.use('/products', require('./routes/products'))
 app.use('/checkout', require('./routes/checkout'))
 

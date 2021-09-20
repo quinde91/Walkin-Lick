@@ -5,3 +5,7 @@ exports.homeCtrlFunction = (req,res) => {
 exports.cartCtrlFunction = (req,res) => {
     res.render('cart')
 }
+
+exports.storeCtrlFunction = (req,res) => {
+    res.render('store')
+}
