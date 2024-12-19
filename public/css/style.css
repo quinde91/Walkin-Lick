@@ -86,10 +86,10 @@ li a{
     cursor: pointer;
     text-align: center;
 }
-/* .image:hover .cart1,
+ .image:hover .cart1,
 .image:hover .cart2,
 .image:hover .cart3,
-.image:hover .cart4*/
+.image:hover .cart4
 .showCart { 
     bottom: 70px;
     opacity: 1;
