@@ -18,13 +18,13 @@ app.use(express.json())
 
 app.set('view engine', 'hbs');
 
-app.get("/", (req, res) =>{
-     res.render('home')
- })
+// app.get("/", (req, res) =>{
+//     res.render('home')
+// })
 
- app.get("/cart", (req, res) =>{
-       res.render('cart');
- })
+// app.get("/cart", (req, res) =>{
+//     res.render('cart');
+// })
 
 app.use('/', require('./routes/pages'));
 app.use('/store', require('./routes/pages'));
