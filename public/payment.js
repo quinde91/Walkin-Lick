@@ -1,4 +1,4 @@
- stage = 'dev'
+ stage = 'prod'
 const host = stage === 'dev' ? 'http://localhost:5000' : 'http://www.walkinglickco.com'
 
 const stripe = Stripe('pk_test_51IocfJAJUHc8DpwBbaD61aWe77gjcNK6oKQ29dNEF0v0R8mJOESMnwgS5k5l8L8Z5N7lqsjBXLfKX2DayiXONCqf0036i0oVGE')

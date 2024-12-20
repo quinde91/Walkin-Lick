@@ -1,4 +1,4 @@
-let stage = 'dev'
+let stage = 'prod'
 const host = stage === 'dev' ? 'http://localhost:5000' : 'http://www.walkinglickco.com'
 
 const localStorageSession = localStorage.getItem('sessionId')

@@ -1,6 +1,6 @@
 let carts = document.querySelectorAll('.add-cart')
 
-let stage = 'dev'
+let stage = 'prod'
 
 let products = []
 
